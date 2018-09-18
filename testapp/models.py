@@ -25,7 +25,7 @@ class Project(models.Model):
         return '{}'.format(self.name ) # TODO
 
     def get_absolute_url(self):
-        from django.core.urlresolvers import reverse
+        from django.urls import reverse
         return reverse('testapi:project-detail', kwargs={'id': self.id})
 
 

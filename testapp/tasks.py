@@ -6,12 +6,8 @@ def add(x, y):
     
 
 @celery_app.task(bind=True)
-def dump_context(self, x, y):
+def dump_context(self):
     print('Executing task id {0.id}, args: {0.args!r} kwargs: {0.kwargs!r}'.format(
             self.request))
 
 
-
-
-if __name__ == '__main__':
-    add.delay(10,20)

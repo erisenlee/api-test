@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'testapp.apps.TestappConfig',
+    # 'testapp.apps.TestappConfig',
+    'account.apps.AccountConfig',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -114,8 +116,16 @@ USE_L10N = True
 
 USE_TZ = True
 
+#celery settings
 CELERY_BROKER_URL = 'redis://localhost/0'
-CELERY_RESULT_BACKEND='redis://localhost/1'
+CELERY_RESULT_BACKEND = 'redis://localhost/1'
+CELERY_TIMEZONE = 'Asia/Shanghai'
+CELERY_TASK_SERIALIZER = 'msgpack'
+
+
+
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 

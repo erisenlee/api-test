@@ -9,6 +9,7 @@ django-heroku = "*"
 redis = "*"
 celery = "*"
 flower = "*"
+"django-bootstrap4" = "*"
 
 [dev-packages]
 pylint = "*"
