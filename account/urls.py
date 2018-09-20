@@ -1,9 +1,11 @@
 from django.urls import path
-from .views import index,sign_up
+from . import views
 
+#app namespace
 app_name = 'account'
 
 urlpatterns = [
-    path('', index, name='index'),
-    path('sign_up/',sign_up,name='sign_up'),
+    path('',views.index, name='index'),
+    path('sign_up/',views.sign_up,name='sign_up'),
+    path('sign_in/',views.sign_in,name='sign_in'),
 ]
