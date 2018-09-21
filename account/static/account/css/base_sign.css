@@ -1,0 +1,9 @@
+body{
+    background-color: burlywood;
+}
+.box{
+    background-color: darkseagreen;
+    margin-top: 10em;
+    border: solid;
+    padding: 2.5em;
+}

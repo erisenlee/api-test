@@ -9,7 +9,7 @@ class AccountManager(models.Manager):
 
 
 class Account(User):
-    objects=AccountManager()
+    accounts=AccountManager()
     class Meta:
         proxy = True
     

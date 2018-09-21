@@ -1,21 +1,15 @@
-{% extends 'account/base.html' %}
+{% extends 'account/base_sign.html' %}
 {% load bootstrap4 %}
 {% block content %}
-    <div class="row">
-        <div class="col-md-3">
-            
-        </div>
-        <div class="col-md-6">
+    
+       
             <form action="{% url 'account:sign_in' %}" method="POST">
                 {% csrf_token %}
                 {% bootstrap_form form %}
                 {% bootstrap_button "Save" button_type="submit" button_class="btn-primary" %}
-
+                <a href="{% url 'account:sign_up' %}" style="text-decoration-line: underline">Sign Up Now</a>
             </form>
-        </div>
-        <div class="col-md-3">
-            
-        </div>
-    </div>
+ 
+        
 {% endblock content %}
     
