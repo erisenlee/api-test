@@ -1,9 +1,14 @@
 body{
-    background-color: burlywood;
+    /* background-color: #aa7ae4;   */
+    /* height: inherit; */
+    background-image: url('../images/sign_in_back.jpg');
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
 }
 .box{
-    background-color: darkseagreen;
-    margin-top: 10em;
-    border: solid;
+    background-color: #87ade7;
+    margin-top: 15em;
+    border: shadow;
     padding: 2.5em;
+    border-radius: 10px;
 }

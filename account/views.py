@@ -8,7 +8,7 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth import authenticate,login
 # Create your views here.
 def index(request):
-    return render(request,'account/index.html')
+    return redirect(reverse('account:sign_in'))
 
 def sign_up(request):
     if request.method=='POST':
